@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 14px;
+}
+
+:root {
+    --main-color: #ffffff;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+}
+
+.content_main {
+    display: flex;
+    height: 90vh;
+}
+
+.header_main {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_main {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo_youtube {
+    width: 60%;
+}
+
+.search_video {
+    width: 42%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search {
+    width: 90%;
+    border: solid 1px rgb(139, 139, 139);
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input_search_video {
+    width: 80%;
+    height: 99%;
+    background-color: var(--main-color);
+    border: solid 1px rgb(139, 139, 139);
+    border-radius: 22px 0px 0px 22px;
+    padding: 0px 22px;
+    position: relative;
+}
+
+.barra {
+    border: solid 1px rgb(139, 139, 139);
+    height: 100%;
+}
+
+.profile_info {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 26px;
+}
+
+.search, .logo_main, .profile_info {
+    height: 66%;
+}
+
+.profile_info > ion-icon {
+    padding: 10px;
+}
+
+.search_options {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile_photo {
+    width: 24%;
+    border-radius: 54%;
+}
+
+.tags {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.text_tags {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.tag {
+    padding: 7px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 6px;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.scrool_tag_right {
+    right: 1%;
+}
+
+.scrool_tag_left {
+    left: 19%;
+    scale: -1;
+}
+
+.scrool_tag_left, .scrool_tag_right {
+    background-color: rgb(249, 249, 250);
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+::-webkit-scrollbar { 
+    display: none;
+}
+
+ion-icon {
+    font-size: large;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 18%;
+    height: 100%;
+    overflow-y: scroll;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 14px;
+}
+
+.main_tools, .inscriptions, .explorer, .more_about, .configuration_tools, .license {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left:  24px ;
+}
+
+.tool {
+    width: 82%;
+    display: flex;
+    align-items: center;
+    
+    padding: 14px 10px;
+    border-radius: 10px;
+}
+
+.tool_description {
+    margin-left: 32px;
+    font-weight: 500;
+}
+
+.yt_perfil {
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    object-fit: cover;
+}
+
+.main_title_tool {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.h_barra {
+    width: 94%;
+    border: solid 0.5px rgb(185, 185, 185);
+    margin: 10px 0px;
+}
+
+
+.container_videos {
+    background-color: red;
+    width: 82%;
+    height: 100%;
+}
