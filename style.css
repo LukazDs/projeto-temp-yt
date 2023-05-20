@@ -6,7 +6,7 @@
 }
 
 :root {
-    --main-color: #ffffff;
+    --main-color: black;
 }
 
 body {
@@ -26,6 +26,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
 }
 
 .logo_main {
@@ -36,7 +39,7 @@ body {
 }
 
 .logo_youtube {
-    width: 60%;
+    width: 50%;
 }
 
 .search_video {
@@ -59,6 +62,7 @@ body {
 .input_search_video {
     width: 80%;
     height: 99%;
+    color: white;
     background-color: var(--main-color);
     border: solid 1px rgb(139, 139, 139);
     border-radius: 22px 0px 0px 22px;
@@ -102,7 +106,7 @@ body {
 }
 
 .tags {
-    width: 100%;
+    width: 82%;
     height: 80px;
     display: flex;
     align-items: center;
@@ -110,7 +114,11 @@ body {
     background-color: var(--main-color);
     display: flex;
     align-items: center;
-    position: relative;
+    position: fixed;
+    top: 62px;
+    left: 18%;
+    z-index: 1;
+
 }
 
 .text_tags {
@@ -142,7 +150,7 @@ body {
 }
 
 .scrool_tag_left, .scrool_tag_right {
-    background-color: rgb(249, 249, 250);
+    background-color:rgba(0, 0, 0, 0.5);
     width: 32px;
     height: 32px;
     border-radius: 16px;
@@ -151,6 +159,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 ::-webkit-scrollbar { 
@@ -159,18 +168,23 @@ body {
 
 ion-icon {
     font-size: large;
+    color: white;
 }
 
 .options {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
     width: 18%;
     height: 100%;
     overflow-y: scroll;
     font-family: "Roboto","Arial",sans-serif;
     font-size: 14px;
+    position: fixed;
+}
+
+.options:first-child {
+    margin-top: 6px;
 }
 
 .main_tools, .inscriptions, .explorer, .more_about, .configuration_tools, .license {
@@ -184,7 +198,6 @@ ion-icon {
     width: 82%;
     display: flex;
     align-items: center;
-    
     padding: 14px 10px;
     border-radius: 10px;
 }
@@ -192,6 +205,7 @@ ion-icon {
 .tool_description {
     margin-left: 32px;
     font-weight: 500;
+    color: white;
 }
 
 .yt_perfil {
@@ -212,9 +226,107 @@ ion-icon {
     margin: 10px 0px;
 }
 
+.license_text {
+    word-wrap: break-word;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px;
+    color: white;
+}
+
+.license_part {
+    display: flex;
+    color: white;
+}
+
+.license_final {
+    color: #8b8d8d;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 15px 0;
+}
 
 .container_videos {
-    background-color: red;
+  
     width: 82%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.videos {
+    width: 82%;
+  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 138px;
+    right: 0;
+}
+
+.video {
+    width: 30%;
+    height: 296px;
+    border: solid 1px black;
+
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.tumb_video {
+    width: 100%;
+    height: 62%;
+    object-fit: fill;
+    border-radius: 4%;
+}
+
+.video_info {
+    width: 100%;
+    height: 100px;
+
+    position: relative;
+    color: white;
+    display: flex;
+
+}
+.video_logo {
+ 
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    
+}
+.canal_video_info {
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    word-break: break-all;
+    max-width: 80%;
+}
+
+.canal_info {
+    display: flex;
+    align-items: center;
+
+}
+
+.video_verification {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 0 6px;
+}
+
+.main_title_video, .canal_info, .video_view {
+    padding: 3px 0;
+}
+
+.main_title_video {
+    font-weight: 700;
 }
